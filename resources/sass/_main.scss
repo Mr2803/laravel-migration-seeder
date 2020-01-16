@@ -1,7 +1,7 @@
 .my_container {
     .comics-container {
         @include flex-center;
-        div{
+        .comic{
             flex-basis: calc(100% / 6);
             flex-grow: 1;
             margin: 30px;
@@ -11,8 +11,10 @@
             text-align: center;
             padding: 20px;
             @include flex-column-between;
+            .review{
+                height:100px;
+                overflow-y: scroll;
             }
-        .comic{
             img{
                 width:50px;
             }

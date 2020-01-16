@@ -11,8 +11,11 @@
                <h3> {{ $comic["title"] }}</h3>
                <small>{{ $comic["author"] }}</small> 
                 <strong>{{ $comic["year"] }}</strong>
-                <p>{{ $comic["review"] }}</p>
-                <p>{{ $comic["vote"] }}/5</p>
+                <div class="review">
+                    <p>{{ $comic["review"] }}</p>
+                </div>
+                
+                <p>Voto : {{ $comic["vote"] }}/5</p>
             </div>
                     {{-- <li><img src="{{ $comic['path'] }}" alt=""></li> --}}
                 

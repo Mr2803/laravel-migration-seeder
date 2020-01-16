@@ -12,7 +12,7 @@ header img {
   flex-wrap: wrap;
 }
 
-.my_container .comics-container div {
+.my_container .comics-container .comic {
   flex-basis: calc(100% / 6);
   -webkit-box-flex: 1;
           flex-grow: 1;
@@ -31,6 +31,11 @@ header img {
           align-items: center;
   -webkit-box-pack: justify;
           justify-content: space-between;
+}
+
+.my_container .comics-container .comic .review {
+  height: 100px;
+  overflow-y: scroll;
 }
 
 .my_container .comics-container .comic img {
