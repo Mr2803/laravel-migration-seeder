@@ -2,20 +2,21 @@
 @extends('layouts.comic-layout')
 @section('content')
 
- <ol>
+    <div class="comics-container">
+
+  
         @foreach($comics as $comic)
-            <li>
-                <ul>
-                    <li>{{ $comic["title"] }}</li>
-                    <li>{{ $comic["author"] }}</li>
-                    <li>{{ $comic["year"] }}</li>
-                    <li>{{ $comic["review"] }}</li>
-                    <li>{{ $comic["vote"] }}</li>
-                    <li>{{ $comic["path"] }}</li>
-                </ul>
-            </li>
-            <br>
+            <div class="comic">
+                <img src="{{url('/img/logohero.png')}}" alt="">
+               <h3> {{ $comic["title"] }}</h3>
+               <small>{{ $comic["author"] }}</small> 
+                <strong>{{ $comic["year"] }}</strong>
+                <p>{{ $comic["review"] }}</p>
+                <p>{{ $comic["vote"] }}/5</p>
+            </div>
+                    {{-- <li><img src="{{ $comic['path'] }}" alt=""></li> --}}
+                
         @endforeach
-    </ol>
+  </div>
     
 @endsection
