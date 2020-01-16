@@ -11,6 +11,7 @@
                     <li>{{ $comic["year"] }}</li>
                     <li>{{ $comic["review"] }}</li>
                     <li>{{ $comic["vote"] }}</li>
+                    <li>{{ $comic["path"] }}</li>
                 </ul>
             </li>
             <br>

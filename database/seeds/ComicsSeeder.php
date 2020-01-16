@@ -19,7 +19,8 @@ class ComicsSeeder extends Seeder
                 'author' => $faker->word,
                 'year' => $faker->year,
                 'review' => $faker->text,
-                'vote' => $faker->numberBetween($min = 1, $max = 5)
+                'vote' => $faker->numberBetween($min = 1, $max = 5),
+                'path' => $faker ->imageUrl($width = 640, $height = 480)
             ];
 
             $comic = new Comic;

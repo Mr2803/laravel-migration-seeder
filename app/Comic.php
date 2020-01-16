@@ -8,5 +8,5 @@ class Comic extends Model
 {
     protected $table = 'comics';
 
-    protected $fillable = ["title","author","year","review","vote"];
+    protected $fillable = ["title","author","year","review","vote","path"];
 }

@@ -20,6 +20,7 @@ class CreateComicsTable extends Migration
             $table->integer('year');
             $table->text('review');
             $table->integer('vote');
+            $table->string('path');
             $table->timestamps();
         });
     }
